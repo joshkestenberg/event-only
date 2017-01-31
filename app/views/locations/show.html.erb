@@ -1,3 +1,4 @@
 <%= link_to "Home", locations_path %> | <%= link_to "Edit", edit_location_path %> | <%= link_to "Delete", location_path, method: :delete, data: {confirm: "Are you sure?"} %><br><br>
 <%= link_to 'Events', location_events_path(@location) %> | <%= link_to 'New Event', new_location_event_path(@location) %>
 <%= render @location %>
+<%= render @events %>

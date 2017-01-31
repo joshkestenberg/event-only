@@ -1,3 +1,4 @@
 <%= link_to "Back to Events", location_events_path(@location) %>
+<%= link_to "Back to Venue", location_path(@location) %>
 <%= render @event %><br><br>
 <%= link_to "Edit Event", edit_location_event_path(@location, @event) %> | <%= link_to "Delete Event", location_event_path(@location, @event), method: :delete, data: {confirm: "Are you sure you want to delete #{@event.name}?"} %>
