@@ -1,1 +1,6 @@
-home#index page
+<% @locations.each do |location| %>
+  <%= render 'location', location: location %>
+  <% location.events.each do |event| %>
+    <%= render 'event', event: event %>
+  <% end %>
+<% end %>
